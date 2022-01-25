@@ -7,6 +7,14 @@
 html {    
     /* ---------- MAKING ONE REM TO 10px ---------- */
     font-size: 62.5%; // 10/16=0.625 * 100
+
+      @include response(md) {
+          font-size: 56.25%;   // 9/16=0.5625
+      }
+
+      @include response(sm) {
+        font-size: 50%;   // 8/16=0.5
+    }
 }
 
 .container {
